@@ -5,6 +5,12 @@ WHERE `language` = 'HTML';
 
 Exercice 2 : 
 
-UPDATE `framworks`
+UPDATE `frameworks`
 SET `framework` = 'Symfony2'
-WHERE `framework` = 'Symfony'
+WHERE `framework` = 'Symfony';
+
+Exercice 3 :
+
+UPDATE `languages`
+SET `version` = '5.1'
+WHERE `language` = 'Javascript' AND `version` = '5';
