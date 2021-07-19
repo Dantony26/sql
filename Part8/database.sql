@@ -33,4 +33,4 @@ FROM
 INNER JOIN `languages` ON `frameworks`.`languagesId` = `languages`.`id`
 GROUP BY
 	`languages`.`id`
-HAVING COUNT(*) > 3;
+HAVING COUNT(`frameworks`.`name`) > 3;
