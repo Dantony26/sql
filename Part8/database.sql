@@ -15,7 +15,7 @@ Exercice 3 :
 SELECT
 	`languages`.`id`,
 	`languages`.`name`,
-	COUNT(*)
+	COUNT(`frameworks`.`name`)
 FROM
 	`frameworks`
 INNER JOIN `languages` ON `frameworks`.`languagesId` = `languages`.`id`
@@ -27,7 +27,7 @@ Exercice 4 :
 SELECT
     `languages`.`id`,
 	`languages`.`name`,
-	COUNT(*)
+	COUNT(`frameworks`.`name`)
 FROM
 	`frameworks`
 INNER JOIN `languages` ON `frameworks`.`languagesId` = `languages`.`id`
