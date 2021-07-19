@@ -18,7 +18,7 @@ SELECT
 	COUNT(`frameworks`.`name`)
 FROM
 	`frameworks`
-INNER JOIN `languages` ON `frameworks`.`languagesId` = `languages`.`id`
+LEFT JOIN `languages` ON `frameworks`.`languagesId` = `languages`.`id`
 GROUP BY
 	`languages`.`id`;
 
