@@ -18,10 +18,11 @@ SELECT
 	COUNT(`frameworks`.`name`)
 FROM
 	`frameworks`
-LEFT JOIN `languages` ON `frameworks`.`languagesId` = `languages`.`id`
+RIGHT JOIN `languages` ON `frameworks`.`languagesId` = `languages`.`id`
 GROUP BY
-	`languages`.`id`;
-
+	`languages`.`id`
+ORDER BY 
+	COUNT(`frameworks`.`name`) DESC;
 Exercice 4 : 
 
 SELECT
